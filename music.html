@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your MUSIC PLAYER</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="music.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your MUSIC PLAYER</h1>
+        <div class="search-box">
+            <input type="text" id="input_search" placeholder="Search by Artist, Song, or Album">
+            <button class="button" id="btn_search">Submit</button>
+        </div>
+        <div class="select-box">
+            <select id="select_genre">
+                <option value="" aria-placeholder="Select Genre">Select Genre</option>
+            </select>
+            <button id="btn_submit_genre">Submit</button>
+            <select id="select_playlist">
+                <option value="">Select Playlist</option>
+            </select>
+            <button id="btn_submit_playlist">Submit</button>
+        </div>
+        <div class="track-info">
+            <div class="track-details" id="song-detail">
+                <!-- Track details will be inserted here -->
+            </div>
+        </div>
+        <div class="result-section" id="result-section">
+            <section class="result" id="result">
+                <h2>Result</h2>
+                <div class="slider">
+                    <div class="slide-track song-list">
+                        <!-- Search results will be inserted here -->
+                    </div>
+                </div>
+            </section>
+            <section class="recommended-tracks" id="recommended">
+                <h2>Recommended</h2>
+                <div class="slider">
+                    <div class="slide-track recommended-list">
+                        <!-- Recommended tracks will be inserted here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <input type="hidden" id="hidden_token" value="">
+    </div>
+</body>
+</html>
